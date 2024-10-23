@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey for research</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-family: 'Times New Roman', serif;
+        }
+        p {
+            font-family: 'Courier New', monospace;
+        }
+
+        .hidden-audio {
+            display: none;
+        }
+
+        .question-4 {
+            font-family: Arial, sans-serif;
+        }
+
+    </style>
+
+        <div class="container">
+            <h1>Survey on how many hours you play games on weekends</h1>
+                <form id="Survey">
+                    <div class="question-1">
+                        <label for="name">Name?</label>
+                            <input type="text" id="name" name="name" required>
+                                <div class="question-2">
+                                    <label for="Grade and section">Grade and Section</label>
+                                        <input type="text" id="grade and section" name="grade and section" required>
+                                </div>
+                    </div>
+
+                    <div class="question-3">
+                        <label>How often do you play games in the weekends?</label>
+                        <input type="radio" id="1 hour" name="hours" value="1 hour" required>
+                        <label for="1 hour">1 hour</label>
+                        <input type="radio" id="5 hours" name="hours" value="5 hours">
+                        <label for="5 hours">5 hours</label>
+                        <input type="radio" id="8 hours" name="hours" value="8 hours">
+                        <label for="8 hours">8 hours</label>
+                        <input type="radio" id="More than 10 hours" name="hours" value="More than 10 hours">
+                        <label for="More than 10 hours">More than 10 hours</label>
+                        <button class="btn btn-Next">Next</button><br>
+                   </div>
+
+                   <div class="question-4 hide">Pwede ba tayo mag usap?</div>
+                    <button class="btn hide btn-Yes">Yes</button>
+                    <button class="btn hide btn-No">No</button>
+
+                    <div class="question-5 hide">Yiee, tara usap na tayo.</div>
+                    <img src="assets/kermit-kermit-love.gif"
+                    class="image-1 hide">
+
+                    <audio class="audio-1 hide" controls>
+                    <source src="assets/Yung Kai - Blue (Lyrics).mp3" type="audio/mpeg">
+                </audio>
+
+
+                    <script src="main.js"></script>
+                    
+                   </div>
+                </form>
+        </div>
+    
+</body>
+</html>
